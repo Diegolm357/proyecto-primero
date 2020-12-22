@@ -1,0 +1,27 @@
+nav {
+    div {
+        display: block;
+        width: auto;
+        background: green;
+        color: black;
+        text-shadow: 1px 1px #fff;
+    }
+}
+
+.portal {
+    display: flex;
+    flex-direction: column;
+    .social {
+        width: 1px;
+        position: fixed;
+        top: 50px;
+        right: 15px;
+    }
+}
+
+i {
+    &:hover {
+        text-decoration: underline;
+        transform: translate(5px);
+    }
+}

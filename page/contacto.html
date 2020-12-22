@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>CONTACTO</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../fontawesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+
+</head>
+
+<body>
+    <header>
+        <img class="logo6" src="../src/el-logo.png" alt="Paris"> HAGA SU RESERVA - SOLICITE INFORMACION
+    </header>
+
+
+
+    <div>
+        <nav>
+            <div>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link " href="../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="elrestoran.html">EL RESTORAN</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="cafeteria.html">CAFETERIA</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="elbar.html">EL BAR</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="lacava.html">LA CAVA</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+
+
+        <form name="my-form-name" action="gracias.html" method="post" enctype="multipart/form-data">
+            <label for="mtxtinput">Nombre completo</label>
+            <input type="text" name="my_text_input_name" id="mtxtinput" value="" placeholder="Lucas Perez">
+
+
+            <label for="email">Email</label>
+            <input type="email" name="my_email_input_name" id="email" value="" required placeholder="Lucas@gmail.com">
+
+            <h3>Estado civil</h3>
+
+            <li><input type="radio" name="estado" id="casado" value="h">
+                <label for="casado">Casado</label>
+            </li>
+            <li> <input type="radio" name="estado" id="viudo" value="m">
+                <label for="Viudo">viudo</label>
+            </li>
+            <li> <input type="radio" name="estado" id="soltero" value="u">
+                <label for="soltero">soltero</label>
+            </li>
+            <li> <input type="radio" name="estado" id="otro" value="o">
+                <label for="otro">otro</label>
+            </li>
+
+
+            <h3>Desea recibir el Newsletter</h3>
+            <label for="my_select">Mi respuesta </label>
+            <select name="my_select_name" id="my_select">
+    <option selected="selected" value="0">Seleccione</option>
+    <option value="1">Si deseo resibir el Newsletter</option>
+    <option value="2">Solo quiero realizar una reserva</option>
+    <option value="3">No deseo recibir propagandas</option>
+    <option value="4">Otra </option>
+   
+  </select>
+
+            <h3>SU OPINION NOS INTERESA</h3>
+            <label for="my_textarea">Mensaje:
+
+</label>
+
+            <textarea name="my_textarea_name" id="my_textarea" rows="10" cols="60" placeholder="Complete por favor">
+  
+</textarea>
+
+            <button type="button" class="btn btn-outline-success">
+            <input type="submit" name="enviar" value="enviar mensaje">
+        </button>
+            <button type="button" class="btn btn-outline-success">
+            <input type="reset" name="Limpiar" value="borrar formulario">
+        </button>
+        </form>
+
+    </div>
+</body>
+
+
+
+<footer>
+    <p>&copy; copiright 2020 &reg;</p>
+</footer>
+
+
+</html>

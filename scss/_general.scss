@@ -1,0 +1,169 @@
+                       :root {
+                          font-size: $font-size-base;
+                      }
+                      
+                      * {
+                          margin: 0;
+                          padding: 0;
+                      }
+                      /*botones */
+                      
+                      @mixin texto-de-botones {
+                          font-family: Roman;
+                          font-size: 25px;
+                          font-weight: bold;
+                      }
+                      
+                      $fon: boton1,
+                      boton2,
+                      boton3;
+                      @each $fon in $fon {
+                          .#{$fon} {
+                              border-top-color: red;
+                              border-left-color: green;
+                              border-bottom-color: red;
+                              border-right-color: green;
+                              @include texto-de-botones();
+                          }
+                      }
+                      
+                      main {
+                          aside {
+                              div {
+                                  width: 1px;
+                                  position: fixed;
+                                  top: 50px;
+                                  margin-right: 2%;
+                                  padding-right: 2%;
+                                  background-color: $black;
+                              }
+                          }
+                      }
+                      
+                      footer {
+                          padding: 1% 1% 1% 1%;
+                          margin-bottom: 0%;
+                          color: $gray;
+                          text-align: center;
+                          width: 100%;
+                      }
+                      
+                      header {
+                          text-align: center;
+                          font-style: $main-font;
+                          font-size: 52px;
+                          background-color: $amarillito;
+                          display: block;
+                          padding-right: 15px;
+                          padding-left: 15px;
+                          margin-right: auto;
+                          margin-left: auto;
+                      }
+                      /* logosss*/
+                      
+                      @for $i from 2 through 6 {
+                          .logo#{$i} {
+                              width: 15% + $i;
+                          }
+                      }
+                      
+                      section {
+                          background: $amarillosuave;
+                      }
+                      
+                      h1 {
+                          color: brown;
+                      }
+                      
+                      p {
+                          color: rgb(3, 3, 48);
+                      }
+                      
+                      div {
+                          background: $amarillosuave;
+                      }
+                      
+                      h2 {
+                          text-align: center;
+                          background-color: DodgerBlue;
+                      }
+                      
+                      .ordenar {
+                          display: flex;
+                          flex-direction: column;
+                      }
+                      
+                      .interno {
+                          width: 50%;
+                          height: auto;
+                      }
+                      
+                      .logo {
+                          border: 1px solid #ddd;
+                          border-radius: 4px;
+                          padding: 1%;
+                          width: 150px;
+                          height: auto;
+                      }
+                      
+                      .galeria {
+                          display: grid;
+                          grid-template-columns: 150px 150px 150px 150px 150px;
+                          grid-template-rows: 150px 150px 150px;
+                      }
+                      
+                      .item1 {
+                          grid-column: 1 / 6;
+                          grid-row: 1 / 5;
+                          border: 1px solid $negron;
+                          width: 150px;
+                          height: 150px;
+                      }
+                      
+                      .item2 {
+                          grid-column: 1/ 6;
+                          grid-row: 2 / 6;
+                          border: 1px solid $negron;
+                          width: 150px;
+                          height: 150px;
+                      }
+                      
+                      .item3 {
+                          grid-column: 1/ 6;
+                          grid-row: 3 / 6;
+                          border: 1px solid $negron;
+                          width: 150px;
+                          height: 150px;
+                      }
+                      
+                      .parent {
+                          display: grid;
+                          grid-template-columns: repeat(4, 1fr);
+                          grid-template-rows: repeat(4, 1fr);
+                          grid-column-gap: 1px;
+                          grid-row-gap: 1px;
+                          padding: 5px 5px 5px 5px;
+                          margin: 5px 5px 5px 5px;
+                          align-items: center;
+                          background-color: blue;
+                      }
+                      
+                      .foto {
+                          width: 50%;
+                      }
+                      
+                      .contenido {
+                          margin-left: 10%;
+                      }
+                      
+                      a {
+                          h3 {
+                              text-align: center;
+                              font-style: $main-font;
+                          }
+                      }
+                      
+                      body {
+                          padding: 1% 1% 1% 1%;
+                          margin: 1% 1% 1% 1%;
+                      }
